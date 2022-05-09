@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Tip {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        int sayi;
+        System.out.print("Bir sayı gir :");
+        sayi =input.nextInt();
+        if ((sayi%100==0)&&(sayi%400==0)) {
+            System.out.println("Artık yıldır");
+        }
+            else{
+                System.out.print("Artık yıl değildir");
+            }
+        }
+    }
