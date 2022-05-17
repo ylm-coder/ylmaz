@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Tip {
+    public  static void main(String[] args) {
+
+        int n;
+        int toplam = 0;
+        Scanner input = new Scanner(System.in);
+        do {
+            System.out.println("Sayıyı giriniz :");
+            n = input.nextInt();
+            if ((n % 2 == 0) && (n % 4 == 0)) {
+
+                toplam = toplam + n;
+            } else if (n % 2 == 1) {
+                n = input.nextInt();
+
+
+            } else {
+                System.out.println("hatalı");
+            }
+        }
+
+
+            while (n > 0) ;
+
+            System.out.println(toplam);
+
+
+
+
+
+
+    }
+}
