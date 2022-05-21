@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Tip {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir sayı giriniz: ");
+        int sayi = input.nextInt();
+        for (int i = 1; i <= sayi; i++) {
+            for (int a = 1; a <= sayi - i; a++) {
+                System.out.print("");
+            }
+            for (int b = 1; b <= (i + 2); b++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+        for (int c = 1; c <= (sayi); c++) {
+            for (int d = 1; d <= 2 * (sayi - 2); d++) {
+
+                System.out.print("");
+            }
+            System.out.print("*");
+        }
+            for (int e = 1; e <= sayi; e++) {
+                for (int f = 1; f <= sayi-2; f++) {
+                    System.out.print("");
+                }
+                System.out.print("*");
+
+
+            }
+        }
+    }
+
